@@ -14,8 +14,8 @@ public class Lesson2003d {
 
         Scanner sc = new Scanner(System.in);
         int left = 2;
-        int right = 200;
-        int med = (right - left) / 2 + left; // середина отрезка
+        int right = 10;
+        int med = (right + left) / 2 ; // середина отрезка
 
         System.out.println("Загаданное число равно " + med + "? Введите 0-нет или 1-да");
         int answer1 = sc.nextInt(); // ввод пользователем да1/нет0. ввод начального значения переменной, управляющей циклом
@@ -26,10 +26,11 @@ public class Lesson2003d {
 
             if (answer2 == 0) { // сдвигаем границы отрезков
                 right = med;
+                med = (right + left - 1) / 2;
             } else {
                 left = med;
+                med = (right + left + 1) / 2;
             }
-            med = (right - left) / 2 + left; // число на середине отрезка
             System.out.println("Загаданное число равно? " + med + " Введите 0-нет 1-да");
             answer1 = sc.nextInt(); // изменение знач. перем. упр. циклом
         }
