@@ -29,11 +29,11 @@ public class Lesson2403f {
                     i--;
                     break; // выход из вложенного цикла for
                 }
-            }
+            }// конец внутреннего цикла
             if (flag == 0) {
                 words[i] = temp; // если не найдено одинаковых слов, то записываем его
             }
-        }
+        }//конц внешнего цикла
         for (int i = 0; i < n; i++) System.out.println("words [" + i + "] = " + words[i]);
     }
 }

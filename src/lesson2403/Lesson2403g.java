@@ -13,7 +13,7 @@ public class Lesson2403g {
         int count = text.split(" ").length;
         System.out.println(count);
         int max = textmass[0].length();
-        int index = 1;
+        int index = 0;
         for (int i = 1; i < count; i++) {
             if (textmass[i].length() > max) {
                 max = textmass[i].length();
