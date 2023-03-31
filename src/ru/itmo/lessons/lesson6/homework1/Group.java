@@ -1,57 +1,61 @@
+/*
 package ru.itmo.lessons.lesson6.homework1;
 
 public class Group {
-    private Mountain[] mountain;
-    private Climber[] climbers;
-    private int numberGr;
+    private Mountain mount;
+    private Climber[] climb;
+    private int index;
     private boolean enter;
 
-    public Group(boolean b, Mountain mountain[], int i) {
-    }
-
-
-
-
-    public void setNumberGr(int numberGr) {
-        if (numberGr < 1) {
-            throw new IllegalArgumentException("В группе дрлжно быть более 0 человек");
-        }
-        this.numberGr = numberGr;
-    }
-
-    public void setEnter(boolean enter) {
+    public Group(Mountain mount, int index, boolean enter) {
         this.enter = enter;
+        this.index = index;
+        this.mount = mount;
+
+        setMountain(mount);
+        setClimber(index);
+
     }
 
-    public void setClimbers(int numberGr) {
-        if (numberGr < 1) {
-            throw new IllegalArgumentException("В группе дрлжно быть более 0 человек");
+    public void setClimber(int index) {
+        if (index < 0) {
+            throw new IllegalArgumentException("bgnhhh");
         }
-        this.numberGr = numberGr;
-
+        climb = new Climber[3];
+        this.index = index;
     }
 
-    public void setMountain(Mountain[] mountain) {
-        if (mountain == null) {
-            throw new IllegalArgumentException("дефолтное значение mountain: null");
+    public void setMountain(Mountain mount) {
+        if (mount == null) {
+            throw new IllegalArgumentException("дефолтное значение mount = null");
         }
-        this.mountain = mountain;
 
-
+        this.mount = mount;
     }
 
-
-
-    public int getNumberGr() {
-        return numberGr;
-
+    public boolean getEnter() {
+        return enter;
     }
-    public void addClimber (Climber climbers) {
 
-        ?????
+    public Climber[] getClimb() {
+        return climb;
+    }
 
-        if (enter == true) {
+    public Mountain getMount() {
+        return mount;
+    }
+
+    public void CatchClimb(Climber climb) {
+        if (index < 3) {
+            climb[index] = Climber;
+            index++;
+        } else {
+            System.out.println("в группе нет свободных мест");
 
         }
+        return;
+
+
     }
 }
+*/

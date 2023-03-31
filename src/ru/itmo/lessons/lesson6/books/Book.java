@@ -1,4 +1,4 @@
-package ru.itmo.lessons.lesson6.books;
+/*package ru.itmo.lessons.lesson6.books;
 
 // Book классы именуем в единственном числе
 // Book и Author наход в одном пакете
@@ -20,7 +20,8 @@ public class Book { // ru.itmo.lessons.lesson6.books
 
         /*if (bookTitle != null && bookTitle.length() >=3){
             title = bookTitle;
-        }*/
+        }*//*
+
 
         // устанавливает значение свойства author
 
@@ -35,3 +36,4 @@ public class Book { // ru.itmo.lessons.lesson6.books
     }
 
 }
+*/

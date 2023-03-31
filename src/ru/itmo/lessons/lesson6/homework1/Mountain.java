@@ -1,3 +1,4 @@
+/*
 package ru.itmo.lessons.lesson6.homework1;
 
 public class Mountain {
@@ -6,6 +7,9 @@ public class Mountain {
     private int height;
 
     public Mountain(String name, String country, int height) {
+        setName(name);
+        setHeight(height);
+        setCountry(country);
     }
 
     public void setName(String name) {
@@ -20,7 +24,6 @@ public class Mountain {
             throw new IllegalArgumentException("country не менее 4 символов");
         }
         this.country = country;
-
     }
 
     public void setHeight(int height) {
@@ -29,15 +32,23 @@ public class Mountain {
         }
         this.height = height;
     }
+
     public String getMountain() {
         return name;
     }
-    public String getCountry(){
+
+    public String getCountry() {
         return country;
     }
-    public int getHeight(){
+
+    public int getHeight() {
         return height;
+    }
+
+    public String toString() {
+        return country + " " + name + " " + height;
     }
 
 }
 
+*/

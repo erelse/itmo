@@ -1,4 +1,5 @@
-package ru.itmo.lessons.lesson6;
+/*
+package ru.itmo.lessons.lesson6.books;
 
 import ru.itmo.lessons.lesson6.books.Author;
 import ru.itmo.lessons.lesson6.books.Book;
@@ -30,3 +31,4 @@ public class Application {
     }
 
 }
+*/
