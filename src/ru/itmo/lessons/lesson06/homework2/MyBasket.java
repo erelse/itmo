@@ -1,4 +1,4 @@
-package ru.itmo.lessons.lesson6.homework2;
+package ru.itmo.lessons.lesson06.homework2;
 import java.util.Arrays;
 public class MyBasket {
     private int pr;

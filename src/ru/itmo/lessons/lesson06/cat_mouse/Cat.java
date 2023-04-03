@@ -1,4 +1,4 @@
-package ru.itmo.lessons.lesson6.cat_mouse;
+package ru.itmo.lessons.lesson06.cat_mouse;
 
 public class Cat {
     private String name;
@@ -15,8 +15,5 @@ public class Cat {
             throw new IllegalArgumentException("invalid");
         }
         this.name = name;
-
-
-
     }
 }

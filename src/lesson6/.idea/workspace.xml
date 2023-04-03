@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="c8e9218d-7219-4a0e-9047-9c62cb620b39" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../ru/itmo/lessons/lesson6/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ru/itmo/lessons/lesson6/books/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ru/itmo/lessons/lesson6/books/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ru/itmo/lessons/lesson6/books/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ru/itmo/lessons/lesson6/homework1/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ru/itmo/lessons/lesson6/homework1/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ru/itmo/lessons/lesson6/homework1/Climber.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ru/itmo/lessons/lesson6/homework1/Climber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ru/itmo/lessons/lesson6/homework1/Group.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ru/itmo/lessons/lesson6/homework1/Group.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ru/itmo/lessons/lesson6/homework1/Mountain.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ru/itmo/lessons/lesson6/homework1/Mountain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ru/itmo/lessons/lesson7/school/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ru/itmo/lessons/lesson7/school/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ru/itmo/lessons/lesson7/school/Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ru/itmo/lessons/lesson7/school/Teacher.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

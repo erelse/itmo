@@ -1,5 +1,5 @@
-package ru.itmo.lessons.lesson6.homework2;
-import java.util.Arrays;
+package ru.itmo.lessons.lesson06.homework2;
+
 public class Application {
     public static void main(String[] args) {
         NutVal[] nutVal = {

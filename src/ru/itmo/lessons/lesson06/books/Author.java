@@ -1,4 +1,4 @@
-package ru.itmo.lessons.lesson6.books;
+package ru.itmo.lessons.lesson06.books;
 
 public class Author {
     // св-ва, хар-ки, поля, атрибуты

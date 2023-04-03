@@ -1,4 +1,4 @@
-package ru.itmo.lessons.lesson7.school;
+package ru.itmo.lessons.lesson07.school;
 
 public class School {
 
