@@ -7,7 +7,7 @@ public class Lesson1503 {
         double length = 20.5;
         double width = 10.2;
         double area = length*width;
-        System.out.println("Площадь прямоугольника со сторонами "+length+" и "+width+ " равна "+area);
+        System.out.print("Площадь прямоугольника со сторонами "+length+" и "+width+ " равна "+area);
 
 
     }
