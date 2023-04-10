@@ -1,3 +1,4 @@
+/*
 package ru.itmo.lessons.lesson07.school;
 
 public class Headmaster {
@@ -15,6 +16,7 @@ public void learn (int level) {
 
 
 
+*/
 /*public class Director extends Person {
 
     public Director(String name, int age) {
@@ -27,5 +29,7 @@ public void learn (int level) {
     public void endEducation(){
         System.out.println("finish education!");
     }
-}*/
+}*//*
 
+
+*/

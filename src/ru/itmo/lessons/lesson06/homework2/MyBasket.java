@@ -1,3 +1,4 @@
+/*
 package ru.itmo.lessons.lesson06.homework2;
 import java.util.Arrays;
 public class MyBasket {
@@ -120,3 +121,4 @@ public class MyBasket {
                    }
 
 }
+*/

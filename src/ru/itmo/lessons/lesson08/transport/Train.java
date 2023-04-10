@@ -1,19 +1,15 @@
 package ru.itmo.lessons.lesson08.transport;
 
-public final class Train extends Transport implements IUse {
+public class Train extends Transport{
+
+    private final String color = "red"; // все поезда одинакового цвета,
+
     private int countWagon;
-    private final String color = "red";
 
-    public Train(String number, int level, int countWagon) {
+
+    public Train( String number, int level, int countWagon, String color) {
         super(number, level);
-        setCountWagon(countWagon);
-    }
-
-
-    public void setCountWagon(int countWagon) {
-        if (countWagon < 1) {
-            throw new IllegalArgumentException("Exception: countWagon < 1");
-        }
+        if (countWagon < 2) throw new IllegalArgumentException("вагонов < 2");
         this.countWagon = countWagon;
     }
 
@@ -21,13 +17,14 @@ public final class Train extends Transport implements IUse {
         return color;
     }
 
-    public int getCountWagon() {
+    public int getCarCount() {
         return countWagon;
     }
-
-    @Override
-    public void use(int level) {
-        System.out.println("транспортное средство в процессе эксплуатации");
-        this.level = (int) (Math.random() * level);
+    public String setCountWagon () {
+        this.countWagon=countWagon;
+        return null;
     }
+
+
+
 }

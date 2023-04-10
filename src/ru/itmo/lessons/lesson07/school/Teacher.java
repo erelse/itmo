@@ -1,3 +1,4 @@
+/*
 package ru.itmo.lessons.lesson07.school;
 
 
@@ -48,4 +49,4 @@ public final class Teacher extends Person implements ITeach {
 
         }
     }
-}
+}*/

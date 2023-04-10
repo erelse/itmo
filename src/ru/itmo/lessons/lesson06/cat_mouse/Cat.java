@@ -1,3 +1,4 @@
+/*
 package ru.itmo.lessons.lesson06.cat_mouse;
 
 public class Cat {
@@ -17,3 +18,4 @@ public class Cat {
         this.name = name;
     }
 }
+*/

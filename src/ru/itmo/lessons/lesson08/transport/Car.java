@@ -1,24 +1,19 @@
 package ru.itmo.lessons.lesson08.transport;
 
-public final class Car extends Transport implements IUse {
-    public String color;
+public class Car extends Transport implements PaintCar {
+    private String color;
+    private int level;
 
-    public Car(String color, String number, int level) {
+    public Car(String number, int level, String color) {
         super(number, level);
-        setColor(color);
-    }
+        if (color == null) throw new IllegalArgumentException("цвет = null");
 
-    public void setColor(String color) { // метод устан знач поля в вызывающем класс
-        if (color == null) {
-            throw new IllegalArgumentException("Exception: color = null");
-        }
         this.color = color;
     }
 
-
     @Override
-    public void use(int level) {
-        System.out.println("транспортное средство в процессе эксплуатации");
-        this.level = (int) (Math.random() * level);
+    public void paintCar(String newColor) {
+        if (newColor == null) throw new IllegalArgumentException("цвет = null");
+        this.color = newColor;
     }
 }

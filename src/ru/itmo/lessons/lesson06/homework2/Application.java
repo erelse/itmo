@@ -1,3 +1,4 @@
+/*
 package ru.itmo.lessons.lesson06.homework2;
 
 public class Application {
@@ -18,3 +19,4 @@ public class Application {
         System.out.println(myBasket);
     }
 }
+*/
