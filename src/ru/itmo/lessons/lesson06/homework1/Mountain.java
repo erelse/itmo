@@ -1,54 +1,27 @@
-/*
-package ru.itmo.lessons.lesson6.homework1;
+package ru.itmo.lessons.lesson06.homework1;
 
 public class Mountain {
-    private String name;
-    private String country;
-    private int height;
+    private final String name;
+    private final String country;
+    private final int height;
 
     public Mountain(String name, String country, int height) {
-        setName(name);
-        setHeight(height);
-        setCountry(country);
-    }
 
-    public void setName(String name) {
         if (name == null || name.length() < 4) {
-            throw new IllegalArgumentException("name не менее 4 символов");
+            throw new IllegalArgumentException("Mountain name length must be at least 4");
+        } else if (country == null || country.length() < 4) {
+            throw new IllegalArgumentException("Country length must be at least 4");
+        } else if (height < 100) {
+            throw new IllegalArgumentException("Mountain height must be at least 100");
         }
+
         this.name = name;
-    }
-
-    public void setCountry(String country) {
-        if (country == null || country.length() < 4) {
-            throw new IllegalArgumentException("country не менее 4 символов");
-        }
         this.country = country;
-    }
-
-    public void setHeight(int height) {
-        if (height < 100) {
-            throw new IllegalArgumentException("height < 100 meters");
-        }
         this.height = height;
     }
 
-    public String getMountain() {
-        return name;
-    }
-
-    public String getCountry() {
-        return country;
-    }
-
-    public int getHeight() {
-        return height;
-    }
-
+    @Override
     public String toString() {
-        return country + " " + name + " " + height;
+        return name + " (" + country + ", " + height + "m)";
     }
-
 }
-
-*/
