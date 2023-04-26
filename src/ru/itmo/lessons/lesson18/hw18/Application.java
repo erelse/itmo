@@ -26,7 +26,7 @@ public class Application {
         // Predicate для удаления курсов (тип Course) с прод.< 3х мес.и стоим.< 20000.
         university.getCourses().removeIf(course -> course.getDuration() < 3 && course.getPrice() < 20000);
         university.getCourses().forEach(course -> System.out.println(course.getName()));
-        System.out.println("___________________________________________________________");
+        System.out.println("__________________________________________________________");
 
 
         // добавляем к положительному числу строки "p."

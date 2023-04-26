@@ -74,7 +74,6 @@ public class Course {
         return Objects.equals(name, course.name);
     }
 
-
     @Override
     public int hashCode() {
         return Objects.hash(price, duration, name);
