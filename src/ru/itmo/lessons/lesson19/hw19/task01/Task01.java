@@ -53,8 +53,8 @@ public class Task01 {
                 .sorted((student1, student2) -> student1.getGender().compareTo(student2.getGender()))
                 .toList();
         //  7. Вывести в консоль всех учеников в возрасте от N до M лет
-        int n=10;
-        int m=15;
+        int n = 10;
+        int m = 15;
         students.forEach(student -> {
                     if (student.getBirth().getYear() <= m && student.getBirth().getYear() >= n)
                         System.out.println(student);
@@ -63,7 +63,7 @@ public class Task01 {
 
         //  8. Собрать в список всех учеников с именем=someName
         String someName = "Петр";
-        List<Student> someStudent= students.stream().filter(student -> someName.equalsIgnoreCase(student.getName())).toList();
+        List<Student> someStudent = students.stream().filter(student -> someName.equalsIgnoreCase(student.getName())).toList();
         System.out.println(someStudent);
 
         //  9. Собрать Map<Student.Gender, Integer>, где Student.Gender - пол, Integer - суммарный возраст учеников данного пола
