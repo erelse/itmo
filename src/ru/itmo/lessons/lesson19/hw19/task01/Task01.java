@@ -30,15 +30,17 @@ public class Task01 {
         Map<Student.Gender, ArrayList<Student>> genderMap = students.stream()
                 .collect(Collectors.groupingBy(Student::getGender, Collectors.toCollection(ArrayList::new)));
         System.out.println(genderMap);
+
         //  2. Найти средний возраст учеников
         double averageAge = students.stream().collect(Collectors.averagingInt(student -> (int) ChronoUnit.YEARS.between(student.getBirth(), LocalDate.now())));
         System.out.println("Средний возраст: " + averageAge);
-        averageAge = students.stream().mapToInt(student -> (int) ChronoUnit.YEARS.between(student.getBirth(), LocalDate.now())).average().orElse(0);
-        System.out.println("Средний возраст: " + averageAge);
+
 
         //  3. Найти самого младшего ученика
         Student youngStudent = students.stream().min((student1, student2) -> (int) ChronoUnit.DAYS.between(student1.getBirth(), student2.getBirth())).orElse(null);
         System.out.println(youngStudent);
+
+
         //  4. Найти самого старшего ученика
         System.out.println(students.stream().max((student1, student2) -> (int) ChronoUnit.DAYS.between(student1.getBirth(), student2.getBirth())).orElse(null));
 
@@ -46,11 +48,12 @@ public class Task01 {
         Map<Integer, List<Student>> yearMap = students.stream()
                 .collect(Collectors.groupingBy(student -> student.getBirth().getYear()));
         System.out.println(yearMap);
+
         //  6. Отсортировать по полу, потом по дате рождения, потом по имени (в обратном порядке), собрать в список (ArrayList)
         List<Student> studentList = students.stream()
-                .sorted((student1, student2) -> student2.getName().compareTo(student1.getName()))
-                .sorted((student1, student2) -> (int) ChronoUnit.DAYS.between(student2.getBirth(), student1.getBirth()))
                 .sorted((student1, student2) -> student1.getGender().compareTo(student2.getGender()))
+                .sorted((student1, student2) -> (int) ChronoUnit.DAYS.between(student2.getBirth(), student1.getBirth()))
+                .sorted((student1, student2) -> student2.getName().compareTo(student1.getName()))
                 .toList();
         //  7. Вывести в консоль всех учеников в возрасте от N до M лет
         int n = 10;
@@ -62,7 +65,7 @@ public class Task01 {
         );
 
         //  8. Собрать в список всех учеников с именем=someName
-        String someName = "Петр";
+        String someName = "Руслан";
         List<Student> someStudent = students.stream().filter(student -> someName.equalsIgnoreCase(student.getName())).toList();
         System.out.println(someStudent);
 

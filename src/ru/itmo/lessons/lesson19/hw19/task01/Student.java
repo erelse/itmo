@@ -60,11 +60,13 @@ public class Student {
         return number == pupil.number && Objects.equals(name, pupil.name) && gender == pupil.gender && Objects.equals(birth, pupil.birth);
     }
 
+
     @Override
     public int hashCode() {
         return Objects.hash(number, name, gender, birth);
     }
 
+    
     @Override
     public String toString() {
         return "Student{" +
