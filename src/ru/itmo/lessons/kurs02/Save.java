@@ -9,7 +9,7 @@ public class Save extends Menu {
 
     private Game game;
 
-    public Save(Game gameObject){
+    public Save(Game game){
         this.game=game;
     }
 

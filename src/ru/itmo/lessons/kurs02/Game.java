@@ -1,10 +1,10 @@
 package ru.itmo.lessons.kurs02;
 
-/*
-import java.io.Serializable;
-*/
 
-public class Game /*implements Serializable*/{
+import java.io.Serializable;
+
+
+public class Game implements Serializable{
     private int first;
     private int second;
     private String text;

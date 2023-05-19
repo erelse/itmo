@@ -127,7 +127,7 @@ public class Paragraphs {
         int numb = scanner.nextInt();
         if (numb == 1) Paragraphs.game(Paragraphs.paragraphs[paragraph.getFirst()]);
         else if (numb == 2) Paragraphs.game(Paragraphs.paragraphs[paragraph.getSecond()]);
-        else if (numb==3) Menu.secondCommand(paragraph).execute();
+        else if (numb==3) Menu.SecondCommand(paragraph).execute();
         else {
             System.out.println("Введите 1, 2 или 3");
             Paragraphs.game(paragraph);

@@ -1,5 +1,8 @@
 package ru.itmo.lessons.kurs02;
 
+import ru.itmo.lessons.kurs02.Game;
+import ru.itmo.lessons.kurs02.Save;
+
 import java.util.Scanner;
 
 public abstract class Menu {
@@ -23,7 +26,7 @@ public abstract class Menu {
         return Menu.firstCommand();
     }
 
-    static Menu secondCommand(Game game) {
+    static ru.itmo.lessons.kurs02.Menu SecondCommand(Game game) {
         System.out.println("Меню: \n1. Сохранить игру \n2. Загрузить игру \n3. Выйти");
         Scanner sc = new Scanner(System.in);
         int numb = sc.nextInt();
@@ -31,12 +34,12 @@ public abstract class Menu {
         if (numb == 1) {
             return  new Save(game);
         } else if (numb == 2) {
-            return new Start(game);
+            return new ru.itmo.lessons.kurs02.Start(game);
         } else if (numb == 3) {
-            return new Exit();
+            return new ru.itmo.lessons.kurs02.Exit();
         }
         System.out.println("Некорректный ввод, введите 1, 2 или 3");
-        return Menu.secondCommand(game);
+        return ru.itmo.lessons.kurs02.Menu.SecondCommand(game);
     }
 
     public abstract void execute();
