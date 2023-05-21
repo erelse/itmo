@@ -3,9 +3,7 @@ package ru.itmo.lessons.kurs02;
 import java.util.Scanner;
 
 public class Paragraphs {
-   /* public static void main(String[] args) {
-        Paragraphs.start();
-    }*/
+
 
     private static Game[] paragraphs = new Game[15];
 
