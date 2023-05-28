@@ -18,8 +18,8 @@ public abstract class Menu {
        if (numb == 1) {
             return new Start(new Paragraphs().getParagraphs()[0]);
         } else if (numb == 2) {
-            return /*new ru.itmo.lessons.kurs02.Load(game);*/new Start(new Paragraphs().getParagraphs()[0]); // неправильный код
-           // (чтобы загружался хотя бы нулевой параграф), нужна загрузка игры из файла Load(game). Не получается!!!
+            return /*new ru.itmo.lessons.kurs02.Load(game);*/new Start(new Paragraphs().getParagraphs()[0]);
+            // чтобы загружался хотя бы нулевой параграф нужна загрузка игры из Load(game). Не получается!
         } else if (numb == 3) {
             return new Exit();
         }
