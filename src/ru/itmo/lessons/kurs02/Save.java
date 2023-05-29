@@ -8,19 +8,22 @@ import java.io.ObjectOutputStream;
 public class Save extends Menu {
 
     private Game game;
+    private String fileName;
 
-    public Save(Game game){
-        this.game=game;
+    public Save(Game game, String fileName) {
+        this.game = game;
+        this.fileName = fileName;
     }
 
     @Override
     public void execute() {
+        System.out.println("Saving to " + this.fileName);
         try (ObjectOutputStream outputStream = new ObjectOutputStream(
-                new FileOutputStream(new File("save")))) {
+                new FileOutputStream(this.fileName))) {
             outputStream.writeObject(game);
+            System.out.println("Game was saved successfully");
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            throw new RuntimeException("Error saving game!", e);
         }
-        new Start(game).execute();
     }
 }
