@@ -2,6 +2,7 @@ package ru.itmo.lessons.kurs02;
 
 import java.util.Scanner;
 
+
 public abstract class Menu {
 
     public static Menu firstCommand() {

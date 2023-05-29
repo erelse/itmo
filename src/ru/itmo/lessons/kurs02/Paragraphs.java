@@ -2,6 +2,7 @@ package ru.itmo.lessons.kurs02;
 
 import java.util.Scanner;
 
+
 public class Paragraphs {
     private static final String PREFIX = "********************\n";
     private static final String MENU = "3 - Меню\n";

@@ -1,5 +1,6 @@
 package ru.itmo.lessons.kurs02;
 
+
 public class Play extends Menu {
     private Game game;
 
