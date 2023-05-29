@@ -1,7 +1,8 @@
 package ru.itmo.lessons.kurs02;
 
 public class Exit extends Menu {
-    @Override
+       @Override
     public void execute() {
+           System.exit(0);
     }
 }
