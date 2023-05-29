@@ -1,8 +1,6 @@
 package ru.itmo.lessons.kurs02;
 
-
 import java.io.Serializable;
-
 
 public class Game implements Serializable {
     private int id;
