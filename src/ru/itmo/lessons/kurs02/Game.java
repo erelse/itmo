@@ -10,10 +10,6 @@ public class Game implements Serializable{
     private int second;
     private String text;
 
-
-//    public Game(int index,  String text) {
-//        this(index, 0, 0, text);
-//    }
     public Game(int index, int first, int second, String text) {
         this.id = index;
         this.first = first;

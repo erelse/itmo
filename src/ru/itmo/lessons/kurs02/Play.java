@@ -9,7 +9,6 @@ public class Play extends Menu {
 
     @Override
     public void execute() {
-        Paragraphs gameList = new Paragraphs();
         Paragraphs.game(game);
     }
 

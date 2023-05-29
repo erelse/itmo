@@ -10,7 +10,6 @@ public class Start extends Menu {
 
     @Override
     public void execute() {
-        Paragraphs paragraphs = new Paragraphs();
         Paragraphs.game(game);
     }
 }
