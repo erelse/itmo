@@ -5,25 +5,22 @@ import java.io.*;
 
 public class Load extends Menu implements Serializable {
 
-    private Game game;
+    private String fileName;
 
-    public Load(Game game) {
-        this.game = game;
+    public Load(String fileName) {
+        this.fileName = fileName;
     }
 
     @Override
     public void execute() {
-
-        try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream("savedGame"))) {
+        System.out.println("=== Загружаем игру из файла: " + this.fileName);
+        try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(fileName))) {
             Game game = (Game) ois.readObject();
-
-            game.getText();
-
+            new Start(game).execute();
         } catch (Exception ex) {
-
-            System.out.println(ex.getMessage());
+            System.err.println("Ошибка загрузки файла!\n" + ex.getMessage());
         }
-        new Start(game).execute();
+
     }
 
 }
