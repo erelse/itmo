@@ -67,7 +67,7 @@ public class Group {
     }
 
     public void addMountaineer(Mountaineer mountaineer) {
-        //if (flag.equals(false)) throw new IllegalArgumentException("Группа заполнена");
+
         if (mountaineer.equals(null)) throw new IllegalArgumentException("Значение не может быть пустым");
         this.mountaineer.add(mountaineer);
         if (this.mountaineer.size() == maxGroup)  recruitedGroup = false;

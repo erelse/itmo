@@ -13,9 +13,9 @@ import java.util.ArrayList;
 
 public class Application {
     public static void main(String[] args) {
-        EntityManagerFactory factory = Persistence.createEntityManagerFactory("ormLessons"); // должна создаваться в блоке try с ресурсом или у объекта вызван метод close
+        EntityManagerFactory factory = Persistence.createEntityManagerFactory("ormLessons");
 
-        EntityManager manager = factory.createEntityManager(); // создание менеджера управляющего ormLesson классами
+        EntityManager manager = factory.createEntityManager();
 
         Mountaineer mountaineer1 = new Mountaineer("Sergei", "Saint-Petersburg");
         Mountaineer mountaineer2= new Mountaineer("Ekaterina", "Moscow");
@@ -56,10 +56,10 @@ public class Application {
 
         manager.getTransaction().commit();
 
-        Mountain mountain2 = new Mountain("Мусала", "Болгария", 6848);
+        Mountain mountain2 = new Mountain("Мусала", "Болгария", 2925);
         Group group2 = new Group(mountaineers,
                 mountain2, 3,
-                LocalDateTime.of(2023, 3, 9, 11, 0),
+                LocalDateTime.of(2023, 03, 9, 11, 0),
                 LocalDateTime.of(2023, 03, 29, 11, 0));
 
         manager.getTransaction().begin();
